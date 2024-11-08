@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+void main()
+{
+    double teste=11, prova=11, media;
+    
+    while(teste>10){
+        system("clear");
+        printf("Digite a nota do teste: ");
+        scanf("%lf",&teste);
+    }
+    while(prova>10){
+        system("clear");
+        printf("Digite a nota do prova: ");
+        scanf("%lf",&prova);
+    }
+    
+    media=(teste+prova)/2;
+    
+    system("clear");
+    
+    if (media>=6){
+        printf("Sua média é %.1lf, logo você está aprovado",media);
+    }else if(media>3.9){
+        printf("Sua média é %.1lf, logo você foi para prova final",media); 
+    }else{
+        printf("Sua média é %.1lf, logo você está reprovado",media);
+    }
+}
