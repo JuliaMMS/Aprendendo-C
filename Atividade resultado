@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    double media;
+    char nome[15],res[20];
+    
+    printf("Digite seu nome: ");
+    scanf("%s",nome);
+    
+    printf("Digite a sua media: ");
+    scanf("%lf",&media);
+    
+    if(media>=6){
+        printf(res,"Aprovado");
+    }else if(media>=4){
+        printf(res,"Prova final");
+    }else{
+        printf(res,"Reprovado");
+    }
+    printf("%s, você teve uma media %.2lf, logo você foi %s",nome,media,res);
+}
